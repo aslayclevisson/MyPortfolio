@@ -8,9 +8,27 @@ function aboutInfo() {
 
   return (
     <section className="container">
-        <h1>Olá, eu sou o Aslay!</h1>
-        <h4></h4>
-        <p><span><a href="#">Propig</a></span></p>
+        <div>
+            <h1>Hey, I'm Aslay</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe sint numquam omnis dolorum magnam incidunt magni quo commodi placeat quas atque illum beatae enim quibusdam, ullam dolorem deleniti cumque?
+            </p>
+        </div>
+        <div class="background-animate" >
+                <ul class="transition-animate">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+    </div >
     </section>
   );
 }
