@@ -1,8 +1,9 @@
-import { AboutMe, Footer } from "./components/index.jsx";
+import { AboutMe, Footer, NavBar } from "./components/index.jsx";
 
 function App() {
   return (
     <>
+      <NavBar />
       <AboutMe />
       <Footer />
     </>
