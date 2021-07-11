@@ -1,10 +1,13 @@
 .navbar-container {
     display: flex;
     flex-direction: row;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     padding: 0 40px;
+    width: 100%;
+    z-index: 10;
 }
 
 .Menu {
@@ -12,4 +15,27 @@
     align-items: center;
     gap: 20px;
     height: 100%;
+    gap: 3rem;
+}
+
+.navigation-page {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+}
+
+.button-contact {
+    height: 80%;
+    width: 20rem;
+    border-radius: 1rem;
+    border: 2px solid #4c3d6d;
+    font-size: 3rem;
+    box-shadow: 0.6rem 0.6rem rgba(76, 61, 109, .8);
+    transition: 2s ease-out;
+    background: transparent;
+    color: #fff;
+}
+
+.button-contact:hover {
+    background: linear-gradient(45deg, #4c3d6d 17%, transparent 17%, transparent 25%, #4c3d6d 25%, #4c3d6d 36%, transparent 36%, transparent 64%, #4c3d6d 64%, #4c3d6d 75%, transparent 75%, transparent 83%, #4c3d6d 83%);
 }

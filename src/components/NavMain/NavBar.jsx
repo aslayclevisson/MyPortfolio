@@ -22,7 +22,7 @@ function NavBar() {
             </li>
           </ul>
 
-          <button>Get In Touch</button>
+          <button className="button-contact">Get In Touch</button>
         </div>
       </div>
     </nav>
