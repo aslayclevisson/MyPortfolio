@@ -2,11 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 100vh;
+    width: 100vw;
     background: #292727;
-    padding: 100px 5rem 0;
+    padding-top: 100px;
     gap: 10rem;
     color: #e2718d ;
+    justify-items: center;
+    align-items: center;
     grid-template-areas:
     'form-info address'
     'form-info social-network'
@@ -35,14 +37,32 @@
     grid-area: made-with;
 }
 
+.form-content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
 .form-fluid {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 85%;
     height: 100%;
-    border-left: 100px;
     position: relative;
+    z-index: 10;
     border: none;
+}
+
+
+.form-fluid legend{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, monospace;
+    font-size: 5rem;
+    font-weight: 700;
+    background: linear-gradient(-340deg, #4c3d6d 0%, #e2718d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
 }
 
 .form-fluid div{
@@ -50,35 +70,60 @@
     flex-direction: column;
     justify-content: space-around;
     width: 85%;
+    padding: 1.5rem;
 }
 
+.form-fluid label {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
 
-.form-fluid::before {
+.form-fluid input,
+.form-fluid textarea {
+    border: none;
+    resize: none;
+    background: rgba(255,255,255, .3);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    border-radius: .3rem;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(226, 113, 141, .5)
+ }
+
+.form-fluid::before, .form-fluid::after{
     content: '';
     position: absolute;
-    border: 3px solid #e9b921;
-    border-left:none;
-    border-bottom:none;
     background: transparent;
-    top: 0;
-    bottom: 0;
-    left: 0;
     width: 0;
     height: 0;
     opacity: 0;
-    transition:width .5s linear 1.5s, height .5s linear 1s, opacity 0.1s 2s
+    transition: all 0.6s;
 }
 
-.form-fluid:hover::before {
-    width:90%;
-    height:50%;
-    opacity:1;
-    transition:1s;
+.form-fluid::before {
+    bottom: -5%;
+    left: 2%;
+    border-bottom: 2px solid #e47994;
 }
 
-.form-fluid:hover::before{
-    width:100%;
-    height:30%;
-    opacity:1;
-    transition:width .5s linear, height .5s linear .5s, opacity .1s
+.form-fluid::after {
+    top: -7%;
+    right: 8%;
+    border-top: 2px solid #e47994;
+    border-right: 2px solid #e47994;
 }
+
+.form-fluid:hover::before,
+.form-fluid:hover::after{
+    width:50%;
+    height:35%;
+    opacity:1;
+}
+
+/*transition:width .5s linear 1.5s, height .5s linear 1s, opacity 0.1s 2s
+transition:width .5s linear, height .5s linear .5s, opacity .1s;*/
+/*-------------------------------------------------------------------------------------------------*/
+

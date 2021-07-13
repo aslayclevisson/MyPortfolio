@@ -36,6 +36,7 @@ h1 {
 
 .container {
     max-width: 1440px;
+    min-height: 100%
 }
 
 

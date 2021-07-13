@@ -14,32 +14,28 @@ function Footer() {
         <fieldset className="form-fluid">
           <legend>Contact me</legend>
           <div>
-            <label htmlFor="first-name">NOME</label>
-            <input type="text" id="first-name" placeholder="Nome" />
+            <label htmlFor="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" placeholder="Your message" />
           </div>
 
           <div>
-            <label htmlFor="second-name">SOBRENOME</label>
+            <label htmlFor="second-name">LAST NAME</label>
             <input type="text" id="second-name" placeholder="Sobrenome" />
           </div>
 
           <div>
-            <label htmlFor="first-name">E-MAIL</label>
-            <input
-              type="email"
-              id="first-name"
-              placeholder="Seu primeiro nome"
-            />
+            <label htmlFor="email">E-MAIL</label>
+            <input type="email" id="email" placeholder="Seu primeiro nome" />
           </div>
 
           <div>
-            <label for="message">Message</label>
+            <label for="message">MESSAGE</label>
             <textarea
               name="message"
               id="message"
               cols="30"
-              rows="10"
-              placeholder="Sua mensagem"
+              rows="6"
+              placeholder="Your message"
             ></textarea>
           </div>
         </fieldset>
@@ -48,8 +44,11 @@ function Footer() {
       <div className="address">
         <h3>Endereço</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          eqeqeqweqweqweqweeeeeee eeeeeeeeeeeeeeeeeeee
+          Centro de Informática/Center of Informatics Universidade Federal de
+          Pernambuco/Federal University of Pernambuco Departamento de
+          Informações e Sistemas/Information and Systems Department Av.
+          Professor Luís Freire, s/n - CDU - 50740-540, Recife, PE, Brazil FAX:
+          +55 81 2126.8438 PHONE: +55 81 2126-8430 EXT. 4008
         </p>
       </div>
 
