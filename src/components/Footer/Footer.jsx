@@ -15,30 +15,34 @@ function Footer() {
           <legend>Contact me</legend>
           <div className="col">
             <div className="inputBox">
-              <label htmlFor="first-name">FIRST NAME</label>
               <input type="text" id="first-name" required="required" />
+              <label htmlFor="first-name">FIRST NAME</label>
               <span className="line"></span>
             </div>
           </div>
 
           <div className="col">
             <div className="inputBox">
-              <label htmlFor="second-name">LAST NAME</label>
               <input type="text" id="second-name" required="required" />
+              <label htmlFor="second-name">LAST NAME</label>
               <span className="line"></span>
             </div>
           </div>
 
           <div className="col">
             <div className="inputBox">
+              <input
+                type="text"
+                id="email"
+                className="EmailField"
+                required="required"
+              />
               <label htmlFor="email">E-MAIL</label>
-              <input type="email" id="email" required="required" />
               <span className="line"></span>
             </div>
           </div>
           <div className="col">
             <div className="inputBox textArea">
-              <label for="message">MESSAGE</label>
               <textarea
                 name="message"
                 className="messageField"
@@ -47,6 +51,7 @@ function Footer() {
                 rows="6"
                 required="required"
               ></textarea>
+              <label for="message">MESSAGE</label>
               <span className="line"></span>
             </div>
           </div>
