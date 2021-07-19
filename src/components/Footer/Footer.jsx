@@ -13,30 +13,46 @@ function Footer() {
       <form action="./" className="form-content">
         <fieldset className="form-fluid">
           <legend>Contact me</legend>
-          <div>
-            <label htmlFor="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" placeholder="Your message" />
+          <div className="col">
+            <div className="inputBox">
+              <label htmlFor="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" required="required" />
+              <span className="line"></span>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="inputBox">
+              <label htmlFor="second-name">LAST NAME</label>
+              <input type="text" id="second-name" required="required" />
+              <span className="line"></span>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="inputBox">
+              <label htmlFor="email">E-MAIL</label>
+              <input type="email" id="email" required="required" />
+              <span className="line"></span>
+            </div>
+          </div>
+          <div className="col">
+            <div className="inputBox textArea">
+              <label for="message">MESSAGE</label>
+              <textarea
+                name="message"
+                className="messageField"
+                id="message"
+                cols="30"
+                rows="6"
+                required="required"
+              ></textarea>
+              <span className="line"></span>
+            </div>
           </div>
 
           <div>
-            <label htmlFor="second-name">LAST NAME</label>
-            <input type="text" id="second-name" placeholder="Sobrenome" />
-          </div>
-
-          <div>
-            <label htmlFor="email">E-MAIL</label>
-            <input type="email" id="email" placeholder="Seu primeiro nome" />
-          </div>
-
-          <div>
-            <label for="message">MESSAGE</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="6"
-              placeholder="Your message"
-            ></textarea>
+            <button>Send</button>
           </div>
         </fieldset>
       </form>
